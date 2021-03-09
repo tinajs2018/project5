@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mock sample</title>
+    <style>
+        .container{
+           
+            display: inline-block;
+        }
+        .bar1,.bar2,.bar3{
+            height: 5px;
+            width: 35px;
+            transition: 0.4s;
+            margin: 6px 0;
+            background-color: black;
+        }
+        .change .bar1{
+            transform: rotate(-45deg);
+            translate: -8px ,6px;
+            -webkit-transform: rotate(-45deg) translate(-8px ,6px);
+        }
+      .change .bar3{
+        transform: rotate(45deg);
+            translate: -8px -8px;
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);  
+      }
+      .change .bar2{
+          opacity: 0;
+      }  
+       
+    </style>
+</head>
+<body>
+  <h1>It is a matter of time to become a ninja</h1> 
+  <div class="container"onclick="myFuction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+  </div>
+  <script>
+      function myFuction(x){
+        x.classList.toggle("change");  
+      }
+  </script>
+</body>
+</html>
